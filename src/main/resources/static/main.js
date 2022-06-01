@@ -459,7 +459,7 @@ async function deleteUser(modal, id) {
     });
 
     $("#deleteButton").on('click', async () => {
-        await deleteUser(id);
+        await removeUser(id);
         await getAllUser();
         modal.modal('hide');
     });
